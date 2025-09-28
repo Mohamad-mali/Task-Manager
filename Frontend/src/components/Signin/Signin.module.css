@@ -1,0 +1,42 @@
+.container {
+	width: 100%;
+	height: 100vh;
+	background: url(../../assets/bg-sign.jpg) no-repeat center/cover;
+	display: flex;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: space-between;
+	height: 100vh;
+	width: 60%;
+	padding: 20px 10px;
+}
+
+.head {
+	color: rgba(255, 255, 255);
+	margin: 100px 15px 20px 30px;
+	font-size: 20px;
+}
+
+.body {
+	color: rgba(255, 255, 255, 0.755);
+	margin: 0 0 20px 40px;
+	max-width: 500px;
+}
+.body h3 {
+	font-size: 50px;
+	margin: 0 0 8px 0;
+}
+.body p {
+	font-size: 16px;
+	margin: 0 0 0 25px;
+}
+
+.sign {
+	background-color: rgba(0, 0, 0, 0.497);
+	backdrop-filter: blur(8px);
+	width: 40%;
+}
