@@ -1,0 +1,35 @@
+.container {
+	background-color: rgba(var(--secondry-color), 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 15px;
+	width: 30%;
+	height: 40%;
+}
+
+.head {
+	border-bottom: 1px solid black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	height: 20%;
+	width: 100%;
+}
+
+.body {
+	padding: 15px 0 5px 10px;
+	height: 60%;
+	width: 100%;
+}
+
+.date {
+	border-top: 1px solid black;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	height: 20%;
+	width: 100%;
+}

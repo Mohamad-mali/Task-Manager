@@ -25,6 +25,9 @@ export default function Sidepanel() {
 						<input type="text" />
 						<label>Description</label>
 						<textarea className={style.textarea}></textarea>
+						<label>Color</label>
+						<input type="color" />
+						{/* make 5 btn to chose between 5 pre set colors */}
 					</div>
 
 					<div className={style.btnContainer}>

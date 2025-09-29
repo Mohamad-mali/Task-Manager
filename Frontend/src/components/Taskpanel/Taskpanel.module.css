@@ -1,0 +1,21 @@
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+.whiteSpace {
+	width: 100%;
+	height: 5%;
+}
+
+.taskContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	height: 85%;
+}
+
+.pagination {
+	height: 10%;
+}
