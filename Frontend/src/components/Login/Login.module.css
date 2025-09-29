@@ -1,0 +1,72 @@
+.tt {
+	/* background-color: aqua; */
+	width: 85%;
+	font-size: 48px;
+	margin: 0 0 23px 0;
+	color: rgba(var(--p-text-color), 0.8);
+}
+
+.input {
+	/* background-color: blue; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	width: 85%;
+	height: 100%;
+}
+
+.input label {
+	color: rgba(var(--p-text-color), 0.6);
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.input input {
+	color: rgba(var(--p-text-color), 0.6);
+	border: none;
+	border-bottom: 2px rgba(var(--p-text-color), 0.3) solid;
+	background-color: transparent;
+	margin-bottom: 30px;
+	font-size: 20px;
+	height: 30px;
+	width: 100%;
+}
+
+.input input:focus {
+	border: none;
+	border-bottom: 1px rgba(var(--p-text-color), 0.3) solid;
+	outline: none;
+}
+
+.btnContainer {
+	width: 85%;
+	height: 10%;
+	padding: 10px 10px 10px 0px;
+}
+
+.btn {
+	width: 150px;
+	height: 30px;
+	border-radius: 13px;
+	font-size: 14px;
+	border: none;
+	margin: 0 15px 0 0;
+	background-color: rgba(var(--primary-color), 0.6);
+}
+.btn:hover {
+	cursor: pointer;
+	scale: 1.05;
+	background-color: rgba(var(--primary-color), 1);
+}
+
+.aLink {
+	text-decoration: underline;
+	font-size: 16px;
+	color: rgba(var(--p-text-color), 0.4);
+}
+
+.aLink:hover {
+	cursor: pointer;
+	color: rgba(var(--p-text-color), 0.7);
+}

@@ -16,13 +16,13 @@
 }
 
 .head {
-	color: rgba(255, 255, 255);
+	color: rgba(var(--text-color), 0.9);
 	margin: 100px 15px 20px 30px;
 	font-size: 20px;
 }
 
 .body {
-	color: rgba(255, 255, 255, 0.755);
+	color: rgba(var(--text-color), 0.7);
 	margin: 0 0 20px 40px;
 	max-width: 500px;
 }
@@ -35,8 +35,28 @@
 	margin: 0 0 0 25px;
 }
 
+.date {
+	width: 100%;
+	height: 5%;
+}
+
 .sign {
-	background-color: rgba(0, 0, 0, 0.497);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(var(--dk-text-color), 0.1);
 	backdrop-filter: blur(8px);
 	width: 40%;
+}
+
+.signCard {
+	/* background-color: red; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 0 20px 0;
+	width: 80%;
+	height: 70%;
 }

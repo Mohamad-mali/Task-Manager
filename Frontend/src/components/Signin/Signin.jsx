@@ -1,6 +1,14 @@
+import { useState } from 'react';
+
+import Clock from '../Clock/Clock.jsx';
+import Login from '../Login/Login.jsx';
+import Signup from '../Signup/Singup.jsx';
+
 import style from './Signin.module.css';
 
 export default function Signin() {
+	const [haveAccount, setHaveAccount] = useState(true);
+
 	return (
 		<>
 			<div className={style.container}>
@@ -19,7 +27,19 @@ export default function Signin() {
 					</div>
 				</div>
 
-				<div className={style.sign}></div>
+				<div className={style.sign}>
+					<div className={style.date}>
+						{' '}
+						<Clock />
+					</div>
+					<div className={style.signCard}>
+						{haveAccount ? (
+							<Login accState={setHaveAccount} />
+						) : (
+							<Signup accState={setHaveAccount} />
+						)}
+					</div>
+				</div>
 			</div>
 		</>
 	);

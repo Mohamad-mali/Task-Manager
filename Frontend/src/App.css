@@ -2,11 +2,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 	/* outline: 1px solid red; */
 }
 
 :root {
-	--primary-color: black;
-	--secondry-color: gray;
-	--text-color: white;
+	--primary-color: 191, 103, 53;
+	--secondry-color: 192, 150, 100;
+	--dk-secondry-color: 100, 115, 96;
+	--p-text-color: 255, 255, 255;
+	--text-color: 243, 173, 88;
+	--dk-text-color: 20, 39, 37;
 }
