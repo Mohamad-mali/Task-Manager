@@ -1,0 +1,54 @@
+.container {
+	background-color: brown;
+	width: 100%;
+	height: 100vh;
+}
+
+.dataContainer {
+	background-color: aqua;
+	display: flex;
+	height: 20vh;
+	width: 100%;
+}
+
+.whiteSpace {
+	background-color: yellow;
+	width: 10%;
+	height: 100%;
+}
+
+.dataPanel {
+	background-color: tomato;
+	width: 80%;
+	height: 100%;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.userContainer {
+	background-color: teal;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 80%;
+	padding: 15px;
+}
+
+.userList {
+	background-color: violet;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	column-gap: 5px;
+	row-gap: 5px;
+	padding: 5px;
+	width: 60%;
+	height: 90%;
+}
+
+.userEdit {
+	background-color: blue;
+	width: 35%;
+	height: 90%;
+}
