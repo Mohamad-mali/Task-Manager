@@ -39,6 +39,8 @@ export default function Sidepanel() {
 						</button>
 					</div>
 				</div>
+
+				<div>{/* user dashbord and setting */}</div>
 			</div>
 		</div>
 	);

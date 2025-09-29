@@ -1,5 +1,7 @@
 .container {
-	background-color: rgba(var(--secondry-color), 0.8);
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(8px);
+	color: rgba(var(--p-text-color), 0.8);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -9,7 +11,7 @@
 }
 
 .head {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	display: flex;
@@ -26,7 +28,7 @@
 }
 
 .date {
-	border-top: 1px solid black;
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
 	display: flex;
 	align-items: center;
 	padding: 0 15px;

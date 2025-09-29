@@ -10,7 +10,7 @@
 }
 
 .taskContainer {
-	background-color: rgba(var(--dk-text-color), 0.7);
+	background-color: rgba(0, 0, 0, 0.7);
 	border-top-right-radius: 45px;
 	width: 100%;
 	height: 95%;
@@ -21,7 +21,7 @@
 }
 
 .ctBtn {
-	background-color: rgba(var(--primary-color), 0.6);
+	background-color: rgba(var(--primary-color), 0.8);
 	margin: 0 auto 0 auto;
 	width: 80%;
 	height: 45px;
@@ -100,7 +100,7 @@
 	font-size: 14px;
 	border: none;
 	margin: 5px;
-	background-color: rgba(var(--primary-color), 0.6);
+	background-color: rgba(var(--primary-color), 0.8);
 }
 .btn:hover {
 	cursor: pointer;
