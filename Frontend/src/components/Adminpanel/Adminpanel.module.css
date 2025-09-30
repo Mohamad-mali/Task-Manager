@@ -1,32 +1,42 @@
 .container {
-	background-color: brown;
+	background: url(../../assets/admin-bg.jpg) no-repeat center/cover;
 	width: 100%;
 	height: 100vh;
 }
 
 .dataContainer {
-	background-color: aqua;
 	display: flex;
 	height: 20vh;
 	width: 100%;
 }
 
 .whiteSpace {
-	background-color: yellow;
 	width: 10%;
 	height: 100%;
 }
 
 .dataPanel {
-	background-color: tomato;
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
 	width: 80%;
 	height: 100%;
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
+	display: flex;
+	flex-direction: column;
 }
 
+.data {
+	height: 50%;
+	color: rgba(var(--p-text-color), 0.8);
+	display: flex;
+	justify-content: space-around;
+	padding: 15px;
+}
+
+/* ------------------------------------------------------------ */
+
 .userContainer {
-	background-color: teal;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -35,20 +45,38 @@
 	padding: 15px;
 }
 
+.userListContainer {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 100%;
+}
+
 .userList {
-	background-color: violet;
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(6, 1fr);
+	border-radius: 15px;
 	column-gap: 5px;
 	row-gap: 5px;
-	padding: 5px;
-	width: 60%;
+	padding: 15px;
+	width: 100%;
 	height: 90%;
 }
 
+.paging {
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
+	width: 100%;
+	height: 10%;
+}
+
 .userEdit {
-	background-color: blue;
-	width: 35%;
-	height: 90%;
+	background-color: rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
+	width: 38%;
+	height: 100%;
+	border-radius: 15px;
 }

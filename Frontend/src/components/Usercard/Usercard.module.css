@@ -1,8 +1,25 @@
 .container {
-	background-color: aqua;
+	background-color: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(10px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px;
+	border-radius: 10px;
+	padding: 10px;
 	height: 10vh;
+}
+
+.userInfo {
+	display: flex;
+	align-items: center;
+}
+
+.userInfo h3 {
+	padding: 0 8px 0 8px;
+}
+
+.userIcon {
+	height: calc(2.5vh + 2.5vw);
+	width: calc(2.5vh + 2.5vw);
+	border-radius: 100%;
 }
