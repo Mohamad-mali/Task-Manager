@@ -1,46 +1,22 @@
 import { useState } from 'react';
 
+import Usercard from '../Usercard/Usercard';
+import Createtask from '../Createtask/Createtask.jsx';
+
 import style from './Sidepanel.module.css';
+import Dashboard from '../Dashboard/Dashboard.jsx';
 
 export default function Sidepanel() {
-	const [creatingTask, setCreatingTask] = useState(false);
-
-	const createtask = () => {
-		setCreatingTask((priv) => !priv);
-	};
-
-	function handleSave() {}
+	const [isDashboard, SetIsDashboard] = useState(false);
 
 	return (
 		<div className={style.container}>
 			<div className={style.whiteSpace}></div>
-			<div className={style.taskContainer}>
-				<button className={style.ctBtn} onClick={createtask}>
-					Create Task!
-				</button>
-
-				<div className={style.inputContainer} hidden={!creatingTask}>
-					<div className={style.inputs}>
-						<label>Task Title</label>
-						<input type="text" />
-						<label>Description</label>
-						<textarea className={style.textarea}></textarea>
-						<label>Color</label>
-						<input type="color" />
-						{/* make 5 btn to chose between 5 pre set colors */}
-					</div>
-
-					<div className={style.btnContainer}>
-						<button onClick={createtask} className={style.btn}>
-							Cancel
-						</button>
-						<button onClick={handleSave} className={style.btn}>
-							Save
-						</button>
-					</div>
+			<div className={style.controllContainer}>
+				{isDashboard ? <Dashboard /> : <Createtask />}
+				<div>
+					<Usercard />
 				</div>
-
-				<div>{/* user dashbord and setting */}</div>
 			</div>
 		</div>
 	);

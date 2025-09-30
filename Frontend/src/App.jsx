@@ -8,8 +8,8 @@ function App() {
 	return (
 		<>
 			{/* <Signin /> */}
-			{/* <Userpanel /> */}
-			<Adminpanel />
+			<Userpanel />
+			{/* <Adminpanel /> */}
 		</>
 	);
 }
