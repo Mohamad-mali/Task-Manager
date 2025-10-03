@@ -11,8 +11,26 @@
 }
 
 .whiteSpace {
+	display: flex;
+	justify-content: center;
 	width: 10%;
 	height: 100%;
+}
+
+.btn {
+	background: rgba(0, 0, 0, 0.3);
+	color: rgba(var(--p-text-color), 0.8);
+	margin: 0 auto;
+	height: 30%;
+	width: 50%;
+	border: none;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+.btn:hover {
+	background: rgba(0, 0, 0, 0.8);
+	scale: 1.1;
 }
 
 .dataPanel {
@@ -32,6 +50,31 @@
 	display: flex;
 	justify-content: space-around;
 	padding: 15px;
+}
+
+.paging {
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnp {
+	background-color: rgba(var(--primary-color), 0.6);
+	color: rgba(0, 0, 0, 0.8);
+	border: none;
+	border-radius: 5px;
+	margin: 0 10px;
+	height: 30%;
+	width: 5%;
+}
+
+.btnp:hover {
+	background-color: rgba(var(--primary-color), 0.8);
+}
+
+.pages {
+	color: rgba(var(--primary-color), 0.6);
 }
 
 /* ------------------------------------------------------------ */
@@ -76,7 +119,90 @@
 .userEdit {
 	background-color: rgba(0, 0, 0, 0.3);
 	backdrop-filter: blur(10px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 38%;
 	height: 100%;
 	border-radius: 15px;
+}
+
+/* --------------------------- */
+
+.input {
+	/* background-color: blue; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	width: 85%;
+	height: 100%;
+}
+
+.input label {
+	color: rgba(var(--p-text-color), 0.6);
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.input input {
+	color: rgba(var(--p-text-color), 0.6);
+	border: none;
+	border-bottom: 2px rgba(var(--p-text-color), 0.3) solid;
+	background-color: transparent;
+	margin-bottom: 30px;
+	font-size: 20px;
+	height: 30px;
+	width: 100%;
+}
+
+.input input:focus {
+	border: none;
+	border-bottom: 1px rgba(var(--p-text-color), 0.3) solid;
+	outline: none;
+}
+
+/* ----------------------- */
+
+.btnControll {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 20%;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnSC,
+.btnDC {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40%;
+}
+
+.btnC,
+.btnS {
+	background-color: rgba(var(--secondry-color), 1);
+	margin: 0 10px;
+	width: 40%;
+	border: none;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+.btnD {
+	background-color: rgba(var(--secondry-color), 1);
+	width: 85%;
+	padding: 4px;
+	border: none;
+	border-radius: 5px;
+}
+
+.btnC:hover,
+.btnS:hover,
+.btnD:hover {
+	background-color: rgba(var(--secondry-color), 0.7);
 }
