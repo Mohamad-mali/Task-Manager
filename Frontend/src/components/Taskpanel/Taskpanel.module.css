@@ -6,6 +6,24 @@
 .whiteSpace {
 	width: 100%;
 	height: 5%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: end;
+	align-items: center;
+}
+
+.btn {
+	background: rgba(0, 0, 0, 0.6);
+	color: rgba(var(--p-text-color), 0.8);
+	height: 80%;
+	width: 5%;
+	border: none;
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+}
+
+.btn:hover {
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .taskContainer {
@@ -18,4 +36,25 @@
 
 .pagination {
 	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btnp {
+	background-color: rgba(var(--primary-color), 0.6);
+	color: rgba(0, 0, 0, 0.8);
+	border: none;
+	border-radius: 5px;
+	margin: 0 10px;
+	height: 30%;
+	width: 5%;
+}
+
+.btnp:hover {
+	background-color: rgba(var(--primary-color), 0.8);
+}
+
+.pages {
+	color: rgba(var(--primary-color), 0.6);
 }
