@@ -6,7 +6,7 @@ import Signup from '../Signup/Singup.jsx';
 
 import style from './Signin.module.css';
 
-export default function Signin() {
+export default function Signin({ setIsLogedIn, setIsAdmin }) {
 	const [haveAccount, setHaveAccount] = useState(true);
 
 	return (
@@ -34,7 +34,11 @@ export default function Signin() {
 					</div>
 					<div className={style.signCard}>
 						{haveAccount ? (
-							<Login accState={setHaveAccount} />
+							<Login
+								accState={setHaveAccount}
+								setIsLogedIn={setIsLogedIn}
+								setIsAdmin={setIsAdmin}
+							/>
 						) : (
 							<Signup accState={setHaveAccount} />
 						)}
