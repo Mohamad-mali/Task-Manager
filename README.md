@@ -30,4 +30,5 @@ Backend
 If you've followed these steps correctly, the app should be live and ready for use.
 
 Admin panel username: admin
+
 Admin panel password: admin
