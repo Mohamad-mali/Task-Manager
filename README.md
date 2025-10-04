@@ -28,3 +28,6 @@ Backend
 4. After the installation finishes, run the command npm start. You should see the message "server is live" in the terminal, confirming that the backend is running.
 -------------------------------------------------------
 If you've followed these steps correctly, the app should be live and ready for use.
+
+Admin panel username: admin
+Admin panel password: admin
